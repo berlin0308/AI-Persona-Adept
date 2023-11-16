@@ -65,7 +65,7 @@ The Assessment consists of four stages:
   - Run-2: An ESTJ person with [the process](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/state/save_2.json) and [the result](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/summary/summary_2.txt)
   - Run-3: An INTP person with [the process](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/state/save_3.json) and [the result](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/summary/summary_3.txt)
 
-## **My discovery**
+## **My Discovery**
 
-
-vd
++ In situations where precise response formats are needed, **in-context learning proves more effective than direct instruction.** Additionally, we may **doublecheck the response format** after GPT's replys to avoid subsequent issues. (When faced with unrelated or ambiguous responses, GPT tends to deviate from the specified format or ask follow-up questions.)
++ Two exceptions often occur during the runs: **Rate Limit Errors** and **Timeouts**. For the former, I implement an automatic retry mechanism with intervals. For the latter, I set the 'request_timeout' parameter in 'openai.ChatCompletion.create' to catch timeout errors.
