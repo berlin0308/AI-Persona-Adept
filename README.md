@@ -13,3 +13,14 @@ This project is a personality assessment application developed using the OpenAI 
   - **user_prompt/** : prompt for users
 + **'pa_config.json'** : configuration file that includes all the necessary settings and parameters required.
 + **'persona_adept.py'** : main program of the project.
+
+## Description ##
+
+The Assessment consists of four stages:
++ **Multiple Choice:** Users provide their preferences by submitting scores from 1 to 5 based on the question descriptios.
++ **Open-ended Questions:** Users provide textual responses, and the system may follow up for clarification if necessary.
++ **Adaptive Questions:** The system adapts its queries based on previous responses, focusing on areas that are less clear.
++ **End and Summarize:** The system considers all previous questions and responses along with an internal scoring system, and identifies the user's MBTI personality type and offers a comprehensive analysis.
+
+## LLM Task Details ##
+
