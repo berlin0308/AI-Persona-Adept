@@ -23,4 +23,5 @@ The Assessment consists of four stages:
 + **End and Summarize:** The system considers all previous questions and responses along with an internal scoring system, and identifies the user's MBTI personality type and offers a comprehensive analysis.
 
 ## LLM Task Details ##
-
++ **Natural Language Understanding and Scoring**
+  - 
