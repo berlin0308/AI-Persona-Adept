@@ -24,4 +24,5 @@ The Assessment consists of four stages:
 
 ## LLM Task Details ##
 + **Natural Language Understanding and Scoring**
-  - Utilizing GPT-3.5 to comprehend the semantic meaning of user responses and estimate scores based on predefined rating criteria.
+  - Utilizing GPT-3.5 to comprehend the semantic meaning of user responses
+  - Able to estimate scores based on the predefined [scoring criteria](https://github.com/berlin0308/AI-Persona-Adept/blob/main/static/question_list/scoring_prompt_first.txt).
