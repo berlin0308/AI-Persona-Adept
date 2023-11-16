@@ -1,0 +1,24 @@
+{
+  "log": "\n歡迎來到AI Persona Adept !\n...\n...\n\n以下4題為選擇題，請輸入以下敘述與您的人格: 1[最不相符]-5[最相符]\n\nQ.1 在社交場合中，相較於獲得能量並感到精力充沛，我更傾向於感到疲倦和需要獨處來恢復精力：2\nQ.2 在理解新概念或處理新信息時，相較於實際觀察和具體細節，我更傾向於運用抽象概念和整體理解：4\nQ.3 當需要做重要決策時，相較於依賴客觀的事實，我更傾向於考慮他人的感受和價值觀：4\nQ.4 處於工作或學習的壓力下，相較於提前計劃、組織，我更傾向於彈性應對、保持選項開放：5",
+  "completed_stages": [
+    "start",
+    "closed_ended"
+  ],
+  "current_stage": "open_ended",
+  "closed_ended": {
+    "ans_1": 4,
+    "ans_2": 4,
+    "ans_3": 4,
+    "ans_4": 5
+  },
+  "open_ended": {},
+  "adaptive": {},
+  "persona_metrics": {
+    "Introvert_Extrovert": 2,
+    "Sensing_iNtuition": 2,
+    "Thinking_Feeling": 2,
+    "Judging_Perceiving": 5
+  },
+  "mbtipersona": "",
+  "summary": ""
+}

@@ -1,0 +1,20 @@
+由以下資訊可以推斷使用者應該是MBTI 16行人格之中的: (只能回答4個英文字母)
+
+Clue 1:
+
+使用者在結束選擇題、開放式問答題、客製化問題後在Introvert_Extrovert指標達到了-15 (0為中立、靠近10為E、靠近-10為I)在Sensing_iNtuition指標達到了-7 (0為中立、 靠近10為N、靠近-10為S)在Thinking_Feeling指標達到了-4 (0為中立、靠近10為F、靠近-10為T)在Judging_Perceiving指標達到了-7 (0為中立、靠近10為P、靠近-10為J)      
+
+Answer 1:
+ISTJ
+
+Clue 2:
+
+使用者在結束選擇題、開放式問答題、客製化問題後在Introvert_Extrovert指標達到了3 (0為中立、靠近10為E、靠近-10為I)在Sensing_iNtuition指標達到了11 (0為中立、 靠近10為N、靠近-10為S)在Thinking_Feeling指標達到了7 (0為中立、靠近10為F、靠近-10為T)在Judging_Perceiving指標達到了4 (0為中立、靠近10為P、靠近-10為J)      
+
+Answer 2:
+ENFP
+
+Clue 3:
+INPUT_PLACEHOLDER
+
+Answer 3:

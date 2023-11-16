@@ -1,0 +1,11 @@
+{
+  "log": "\n歡迎來到AI Persona Adept !\n...\n...\n",
+  "completed_stages": [],
+  "current_stage": "",
+  "closed_ended": {
+    "ques_1_EI": 0,
+    "ques_2": 0,
+    "ques_3": 0,
+    "ques_4": 0
+  }
+}

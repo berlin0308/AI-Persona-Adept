@@ -1,0 +1,30 @@
+
+請根據這個心理測驗的問題和使用者回覆的內容，寫一篇關於使用者的人格的深度解析
+
+第一段: 公布使用者的人格類別，並簡述這個人格的特質，最後承接到第二段
+
+第二段: 根據第一個維度: Introvert, Extrovert 做解析，
+主要根據使用者對於和問題(得以分辨Introvert, Extrovert的問題)的回答內容，
+並連結到為什麼這個維度使用者屬於Introvert or Extrovert
+
+第二段: 根據第一個維度: Sensing, iNtuition 做解析，
+主要根據使用者對於和問題(得以分辨Sensing, iNtuition的問題)的回答內容，
+並連結到為什麼這個維度使用者屬於Sensing or iNtuition
+
+第三段: 根據第一個維度: Thinking, Feeling 做解析，
+主要根據使用者對於和問題(得以分辨Thinking, Feeling的問題)的回答內容，
+並連結到為什麼這個維度使用者屬於Thinking or Feeling
+
+第四段: 根據第一個維度: Judging, Perceiving 做解析，
+主要根據使用者對於和問題(得以分辨Judging, Perceiving的問題)的回答內容，
+並連結到為什麼這個維度使用者屬於Judging or Perceiving
+
+第五段: 總結本次測驗的內容，並說明本測驗運用AI追問問題和客製化問題，可以為你得到更加客製化的結果
+
+---------------------------
+測驗結果:
+使用者在測驗後的人格為 MBTI_PERSINALITY
+
+此為本次測驗的所有問題和使用者回覆，請依據這個做總結:
+ALL_LOG_TEXT
+
