@@ -56,7 +56,7 @@ The Assessment consists of four stages:
     ```
 
 + **Summarization**
-  - During the assessment, all questions and responses are recorded within the 'State' class.
+  - During the assessment, all questions and responses are recorded within the **'State'** class.
   - A personalized personality assessment report is generated with the [specified article structure](https://github.com/berlin0308/AI-Persona-Adept/blob/main/static/question_list/summary_instruction.txt).
   - Example results of summarization are [Here](https://github.com/berlin0308/AI-Persona-Adept/tree/main/pa_output/summary)
 
@@ -68,4 +68,5 @@ The Assessment consists of four stages:
 ## **My Discovery**
 
 + In situations where precise response formats are needed, **in-context learning proves more effective than direct instruction.** Additionally, we may **doublecheck the response format** after GPT's replys to avoid subsequent issues. (When faced with unrelated or ambiguous responses, GPT tends to deviate from the specified format or ask follow-up questions.)
-+ Two exceptions often occur during the runs: **Rate Limit Errors** and **Timeouts**. For the former, I implement an automatic retry mechanism with intervals. For the latter, I set the 'request_timeout' parameter in 'openai.ChatCompletion.create' to catch timeout errors.
++ Two exceptions often occur during the runs: **Rate Limit Errors** and **Timeouts**. For the former, I implement an automatic retry mechanism with intervals. For the latter, I set the **'request_timeout'** parameter in **'openai.ChatCompletion.create'** to catch timeout errors.
++ Implementing the **'State'** class and **'Action-based control'** is a new approach for me, and I consider it an effective way to handle complexity and streamline the assessment process. 
