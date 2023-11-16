@@ -24,4 +24,4 @@ The Assessment consists of four stages:
 
 ## LLM Task Details ##
 + **Natural Language Understanding and Scoring**
-  - 
+  - Utilizing GPT-3.5 to comprehend the semantic meaning of user responses and estimate scores based on predefined rating criteria.
