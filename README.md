@@ -1,7 +1,7 @@
-# AI Persona Adept - a customized personality assessment
+# AI Persona Adept: Your Personalized Consultant
 
 ## Introduction
-This project is a personality assessment application developed using the OpenAI API, designed to provide a more personalized assessment of the user's personality, offering an engaging and valuable personality evaluation.
+This project is a Personality Assessment Application developed using **OpenAI API**, designed to provide a more personalized assessment of the user's personality, offering an engaging and valuable personality evaluation.
 
 ## Repository Structure
 
@@ -17,7 +17,7 @@ This project is a personality assessment application developed using the OpenAI 
 ## Description
 
 The Assessment consists of four stages:
-+ **Multiple Choice:** Users provide their preferences by submitting scores from 1 to 5 based on the question descriptios.
++ **Multiple Choice:** Users provide their preferences by submitting scores from 1 to 5 based on the question descriptions.
 + **Open-ended Questions:** Users provide textual responses, and the system may follow up for clarification if necessary.
 + **Adaptive Questions:** The system adapts its queries based on previous responses, focusing on areas that are less clear.
 + **End and Summarize:** The system considers all previous questions and responses along with an internal scoring system, and identifies the user's MBTI personality type and offers a comprehensive analysis.
