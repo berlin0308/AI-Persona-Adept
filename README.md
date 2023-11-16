@@ -14,7 +14,7 @@ This project is a personality assessment application developed using the OpenAI 
 + **'pa_config.json'** : configuration file that includes all the necessary settings and parameters required.
 + **'persona_adept.py'** : main program of the project.
 
-## Description ##
+## Description
 
 The Assessment consists of four stages:
 + **Multiple Choice:** Users provide their preferences by submitting scores from 1 to 5 based on the question descriptios.
@@ -22,7 +22,7 @@ The Assessment consists of four stages:
 + **Adaptive Questions:** The system adapts its queries based on previous responses, focusing on areas that are less clear.
 + **End and Summarize:** The system considers all previous questions and responses along with an internal scoring system, and identifies the user's MBTI personality type and offers a comprehensive analysis.
 
-## LLM Task Details ##
+## LLM Task Details
 + **Natural Language Understanding and Scoring**
   - Utilizing GPT-3.5 to comprehend the semantic meaning of user responses
   - Able to estimate scores based on the predefined [scoring criteria](https://github.com/berlin0308/AI-Persona-Adept/blob/main/static/question_list/scoring_prompt_first.txt).
@@ -57,6 +57,15 @@ The Assessment consists of four stages:
 
 + **Summarization**
   - During the assessment, all questions and responses are recorded within the 'State' class.
-  - Based on the recorded Q&A interactions, a personalized personality assessment report is generated, linking user responses to the corresponding outcomes.
+  - A personalized personality assessment report is generated with the [specified article structure](https://github.com/berlin0308/AI-Persona-Adept/blob/main/static/question_list/summary_instruction.txt).
   - Example results of summarization are [Here](https://github.com/berlin0308/AI-Persona-Adept/tree/main/pa_output/summary)
- 
+
+## **Example Runs**
+  - Run-1: An ISTP person with [the process](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/state/save_1.json) and [the result](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/summary/summary_1.txt)
+  - Run-2: An ESTJ person with [the process](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/state/save_2.json) and [the result](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/summary/summary_2.txt)
+  - Run-3: An INTP person with [the process](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/state/save_3.json) and [the result](https://github.com/berlin0308/AI-Persona-Adept/blob/main/pa_output/summary/summary_3.txt)
+
+## **My discovery**
+
+
+vd
