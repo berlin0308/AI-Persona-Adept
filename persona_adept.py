@@ -223,7 +223,7 @@ class PersonaAdept:
             "start_open_ended": "開始開放式問答",
             "revise_open_ended": "修改開放式問答",
             "start_adaptive": "開始追加問題",
-            "revise_adaptive": "修改追加問題",
+            "cont_adaptive": "繼續追加問題",
             "end": "結束測驗"
         }
 
@@ -362,7 +362,7 @@ class PersonaAdept:
 
             action_list_text = "\n執行：\n"
             actionid_to_action = {}
-            for i, action in enumerate(list(set(action_list))):
+            for i, action in enumerate(action_list):
                 action_id = str(i)
                 actionid_to_action[action_id] = action
                 action_text = self.action_to_text[action]
@@ -379,7 +379,7 @@ class PersonaAdept:
             return use_action
 
 
-    def assert_format(self, text, format):
+    def assert_format(self, text, format, N=False):
         if format == 'score_-5_to_5':
             try:
                 if int(text) >= -5 and int(text) <= 5:
@@ -388,7 +388,10 @@ class PersonaAdept:
                     return False
                     
             except:
+                if N and str(text) == 'N':
+                    return True
                 return False
+        
         elif format == 'MBTI':
             if len(format) == 4:
                 return True
@@ -450,7 +453,7 @@ class PersonaAdept:
         # print(gpt_in)
         
         score = self.gpt.run_gpt(gpt_in, 200)
-        while not self.assert_format(score, 'score_-5_to_5'):
+        while not self.assert_format(score, 'score_-5_to_5', N=True):
             time.sleep(2)
             score = self.gpt.run_gpt(gpt_in, 200)
         
@@ -482,7 +485,7 @@ class PersonaAdept:
         # print(gpt_in)
         
         score = self.gpt.run_gpt(gpt_in, 200)
-        while not self.assert_format(score, 'score_-5_to_5'):
+        while not self.assert_format(score, 'score_-5_to_5', N=True):
             time.sleep(2)
             score = self.gpt.run_gpt(gpt_in, 200)
         
@@ -514,7 +517,7 @@ class PersonaAdept:
         # print(gpt_in)
         
         score = self.gpt.run_gpt(gpt_in, 200)
-        while not self.assert_format(score, 'score_-5_to_5'):
+        while not self.assert_format(score, 'score_-5_to_5', N=True):
             time.sleep(2)
             score = self.gpt.run_gpt(gpt_in, 200)
         
@@ -546,7 +549,7 @@ class PersonaAdept:
         # print(gpt_in)
         
         score = self.gpt.run_gpt(gpt_in, 200)
-        while not self.assert_format(score, 'score_-5_to_5'):
+        while not self.assert_format(score, 'score_-5_to_5', N=True):
             time.sleep(2)
             score = self.gpt.run_gpt(gpt_in, 200)
         
@@ -592,7 +595,7 @@ class PersonaAdept:
         # print(next_ques_category)
 
         ques_categories = {0:"adaptive_I_E", 1:"adaptive_S_N", 2:"adaptive_T_F", 3:"adaptive_J_P"}
-        print(self.question_list_to_text[ques_categories[next_ques_category]].split("/"))
+        # print(self.question_list_to_text[ques_categories[next_ques_category]].split("/"))
 
         adaptive_ques = random.choice(self.question_list_to_text[ques_categories[next_ques_category]].split("/"))
         adaptive_response = str(input(adaptive_ques))
@@ -602,7 +605,7 @@ class PersonaAdept:
         # print(gpt_in)
         
         score = self.gpt.run_gpt(gpt_in, 200)
-        while not self.assert_format(score, 'score_-5_to_5'):
+        while not self.assert_format(score, 'score_-5_to_5', N=True):
             time.sleep(2)
             score = self.gpt.run_gpt(gpt_in, 200)
 
@@ -627,7 +630,8 @@ class PersonaAdept:
         self.state.persona_metrics[ques_metrics[next_ques_category]] += int(score)
         self.state.save()
 
-        self.state.completed_stages.append("adaptive")
+        if "adaptive" not in self.state.completed_stages:
+            self.state.completed_stages.append("adaptive")
         self.state.save()
         return
         
@@ -648,7 +652,7 @@ class PersonaAdept:
                     f"在Judging_Perceiving指標達到了{pm['Judging_Perceiving']} (0為中立、靠近10為P、靠近-10為J)"
         gpt_in = str(self.question_list_to_text["key_result_prompt"])
         gpt_in = gpt_in.replace("INPUT_PLACEHOLDER", key_result)
-        print(gpt_in)
+        # print(gpt_in)
 
         mbtipersona = self.gpt.run_gpt(gpt_in, 200, timeout=60)
         while not self.assert_format(mbtipersona, 'MBTI'):
@@ -678,7 +682,7 @@ def main():
     arg = parser.parse_args()
 
     # openai.api_key = input("OpenAI API Key: ")
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     config = Config(arg.config_file)
     assess = PersonaAdept(config)
