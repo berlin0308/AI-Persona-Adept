@@ -385,13 +385,11 @@ class PersonaAdept:
                 if int(text) >= -5 and int(text) <= 5:
                     return True
                 else:
-                    return False
-                    
+                    return False 
             except:
                 if N and str(text) == 'N':
                     return True
                 return False
-        
         elif format == 'MBTI':
             if len(format) == 4:
                 return True
@@ -681,8 +679,7 @@ def main():
     parser.add_argument("--config_file", type=str, default="pa_config.json")
     arg = parser.parse_args()
 
-    # openai.api_key = input("OpenAI API Key: ")
-    openai.api_key = "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"
+    openai.api_key = input("OpenAI API Key: ")
 
     config = Config(arg.config_file)
     assess = PersonaAdept(config)
